@@ -49,6 +49,7 @@
 		187D72221BFF176700020C52 /* SDCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 187D71F61BFF176700020C52 /* SDCollectionViewCell.m */; };
 		187D72231BFF176700020C52 /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 187D71F81BFF176700020C52 /* SDCycleScrollView.m */; };
 		187D72241BFF176700020C52 /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 187D71FA1BFF176700020C52 /* UIView+SDExtension.m */; };
+		187D722C1BFF233B00020C52 /* MQview.m in Sources */ = {isa = PBXBuildFile; fileRef = 187D722B1BFF233B00020C52 /* MQview.m */; };
 		18BCD4871BFD7030005D1AB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BCD4861BFD7030005D1AB4 /* main.m */; };
 		18BCD4901BFD7030005D1AB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BCD48E1BFD7030005D1AB4 /* Main.storyboard */; };
 		18BCD4931BFD7030005D1AB4 /* BaiSi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18BCD4911BFD7030005D1AB4 /* BaiSi.xcdatamodeld */; };
@@ -155,6 +156,8 @@
 		187D71F81BFF176700020C52 /* SDCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCycleScrollView.m; sourceTree = "<group>"; };
 		187D71F91BFF176700020C52 /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
 		187D71FA1BFF176700020C52 /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
+		187D722A1BFF233B00020C52 /* MQview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQview.h; sourceTree = "<group>"; };
+		187D722B1BFF233B00020C52 /* MQview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQview.m; sourceTree = "<group>"; };
 		18BCD4821BFD7030005D1AB4 /* BaiSi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaiSi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18BCD4861BFD7030005D1AB4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18BCD48F1BFD7030005D1AB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -425,6 +428,8 @@
 		187D72251BFF17B800020C52 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				187D722A1BFF233B00020C52 /* MQview.h */,
+				187D722B1BFF233B00020C52 /* MQview.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -719,6 +724,7 @@
 				187D72061BFF176700020C52 /* AppDelegate.m in Sources */,
 				187D721E1BFF176700020C52 /* TAAbstractDotView.m in Sources */,
 				187D72051BFF176700020C52 /* MQMeTableViewCell.m in Sources */,
+				187D722C1BFF233B00020C52 /* MQview.m in Sources */,
 				187D72241BFF176700020C52 /* UIView+SDExtension.m in Sources */,
 				187D720C1BFF176700020C52 /* UITableViewCell+MQExtension.m in Sources */,
 				187D721C1BFF176700020C52 /* MQTag2ViewController.m in Sources */,
