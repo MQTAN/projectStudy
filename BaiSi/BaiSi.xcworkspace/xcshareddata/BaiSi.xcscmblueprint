@@ -1,0 +1,35 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "d60c670a-ed6c-03c5-4992-ce57b7db7bff",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "a3f762aa-aebe-02f6-f049-ce57b7db7bff" : {
+
+    },
+    "d60c670a-ed6c-03c5-4992-ce57b7db7bff" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "a3f762aa-aebe-02f6-f049-ce57b7db7bff" : 0,
+    "d60c670a-ed6c-03c5-4992-ce57b7db7bff" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "39BE0D6A-3CAA-45D7-B8FD-23F8852AFE61",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "a3f762aa-aebe-02f6-f049-ce57b7db7bff" : "StudyBaiSi.git\/",
+    "d60c670a-ed6c-03c5-4992-ce57b7db7bff" : "projectStudy.git\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "BaiSi",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "trunk\/BaiSi\/BaiSi.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/278016000%40qq.com@github.com\/MQTAN\/StudyBaiSi.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "a3f762aa-aebe-02f6-f049-ce57b7db7bff"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/278016000%40qq.com@github.com\/MQTAN\/projectStudy.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "d60c670a-ed6c-03c5-4992-ce57b7db7bff"
+    }
+  ]
+}
