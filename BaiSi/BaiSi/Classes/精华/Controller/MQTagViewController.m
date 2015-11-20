@@ -10,6 +10,7 @@
 #import "SDCycleScrollView.h"
 #import "MQNavigationController.h"
 #import "MJRefresh.h"
+#import "MQTag2ViewController.h"
 
 @interface MQTagViewController ()<SDCycleScrollViewDelegate, UITableViewDelegate, UITableViewDataSource, UIWebViewDelegate>
 /**tableView测试*/
@@ -153,6 +154,9 @@
     }
     if (indexPath.row == 1) {
         //添加标签页
+        MQTag2ViewController *tagVc = [[MQTag2ViewController alloc] init];
+        [self.navigationController pushViewController:tagVc animated:YES];
+        
     }
 }
 @end
