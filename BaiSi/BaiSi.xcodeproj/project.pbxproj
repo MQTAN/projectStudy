@@ -290,6 +290,7 @@
 		187D71B81BFF176700020C52 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				187D72261BFF189300020C52 /* Controller */,
 				187D71B91BFF176700020C52 /* AppDelegate.h */,
 				187D71BA1BFF176700020C52 /* AppDelegate.m */,
 				187D71BB1BFF176700020C52 /* Category */,
@@ -426,6 +427,13 @@
 			children = (
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		187D72261BFF189300020C52 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		18BCD4791BFD7030005D1AB4 = {
