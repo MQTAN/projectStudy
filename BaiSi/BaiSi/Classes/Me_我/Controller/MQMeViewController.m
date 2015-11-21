@@ -14,6 +14,7 @@
 #pragma mark- tableview不能分组的原因,一定是创建tableview的时候就要设定分组样式..否则没有效果
 @end
 
+
 @implementation MQMeViewController
 //只有本文件可以用的循环利用的静态cell
 static NSString *const MQMeCellID = @"meCell";
@@ -21,6 +22,7 @@ static NSString *const MQMeCellID = @"meCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUpTabView];
+#pragma mark - 修改了bundleId
     
 }
 - (void)viewWillAppear:(BOOL)animated{

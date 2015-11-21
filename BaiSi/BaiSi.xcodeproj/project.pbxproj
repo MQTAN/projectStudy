@@ -895,9 +895,9 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = BaiSi/Classes/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = BaiSi/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.DuoDi.BaiSi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.baidu.BaiSi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "BaiSi/Classes/Me_我/View/BaiSi-Bridging-Header.h";
@@ -916,9 +916,9 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = BaiSi/Classes/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = BaiSi/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.DuoDi.BaiSi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.baidu.BaiSi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "BaiSi/Classes/Me_我/View/BaiSi-Bridging-Header.h";
