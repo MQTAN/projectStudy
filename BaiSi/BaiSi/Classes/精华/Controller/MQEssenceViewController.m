@@ -11,13 +11,31 @@
 
 @interface MQEssenceViewController ()
 
+@property(nonatomic, weak) UIView *topicView;
 @end
 
 @implementation MQEssenceViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor clearColor];
     [self setNav];
+    [self setTopicView];
+    MQLogLine(@"topicview = %@", NSStringFromCGRect(self.topicView.frame));
+}
+- (void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
+    [self.topicView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.equalTo(self.view);
+        make.height.mas_equalTo(44);
+    }];
+}
+- (void)setTopicView{
+    UIView *topicView = [[UIView alloc] init];
+    self.topicView = topicView;
+    topicView.frame = CGRectMake(0, MQNavBarMaxY, self.view.width, 44);
+    topicView.backgroundColor = [UIColor redColor];
+    [self.view addSubview:topicView];
 }
 - (void)setNav{
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
