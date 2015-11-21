@@ -22,8 +22,12 @@
 
 - (void)setSquare:(MQSquare *)square{
     _square = square;
-    [self setTitle:square.name forState:UIControlStateNormal];
-    [self sd_setImageWithURL:[NSURL URLWithString:square.icon] forState:UIControlStateNormal];
+#pragma mark 当square返回数据位空的时候是会报错的.
+    if ([square isKindOfClass:[NSNull class]]) {
+        return;
+    }
+    [self setTitle:_square.name forState:UIControlStateNormal];
+    [self sd_setImageWithURL:[NSURL URLWithString:_square.icon] forState:UIControlStateNormal];
 }
 
 - (void)layoutSubviews{

@@ -80,18 +80,5 @@ static NSString *const MQMeCellID = @"meCell";
     return cell;
 }
 
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
-{
-    MQLogLine(@"scrollViewDidEndDecelerating");
-//    [self.tableView reloadData];
-    MQLogLine(@"%@", NSStringFromCGRect(self.tableView.frame));
-    
-}
-- (BOOL)automaticallyAdjustsScrollViewInsets{
-    MQLogLine(@"automaticallyAdjustsScrollViewInsets");
-    return YES;
-}
-- (void)scrollViewDidZoom:(UIScrollView *)scrollView{
-    MQLogLine(@"scrollViewDidZoom");
-}
+
 @end

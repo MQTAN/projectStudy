@@ -10,6 +10,7 @@
 #import "MQSquare.h"
 #import "MQMeButton.h"
 #import "MQWebViewController.h"
+#import "MJExtension.h"
 
 static NSUInteger const MQColsCount = 4;
 @implementation MQFooterView
@@ -24,7 +25,6 @@ static NSUInteger const MQColsCount = 4;
         [MQHTTPTool GET:MQRequestURL params:params success:^(id responseObject) {
 //            [responseObject writeToFile:@"/Users/apple/Desktop/memFooterView.plist" atomically:YES];
             [weakSelf creatSquare:[MQSquare mq_objectArrayWithKeyValuesArray:responseObject[@"square_list"]]];
-            
         } failure:^(NSError *error) {
             
         }];
@@ -32,7 +32,7 @@ static NSUInteger const MQColsCount = 4;
     return self;
 }
 - (void)creatSquare:(NSArray *)squares{
-    MQLog(@"%@", squares);
+    MQLog(@"数组为空 = %@", squares);
     self.backgroundColor = MQRandomColor;
     //每行的列数
     NSUInteger colsCount = MQColsCount;
