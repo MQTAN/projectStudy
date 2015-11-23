@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:weiBoSwift/weiBoSwift.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:BaiSi.xcodeproj">
    </FileRef>
    <FileRef
