@@ -104,8 +104,10 @@
         cell.textLabel.text = @"加载网页,奇艺高清视频网";
     }
     if (indexPath.row == 1) {
-        cell.textLabel.text = @"加载标签页";
+        cell.textLabel.text = @"学习cell中button点击事件";
     }
+    
+    
     
     return cell;
 }
@@ -159,4 +161,5 @@
         
     }
 }
+
 @end

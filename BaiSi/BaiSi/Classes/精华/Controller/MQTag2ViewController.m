@@ -7,6 +7,7 @@
 //
 
 #import "MQTag2ViewController.h"
+#import "MQTag2TableViewCell.h"
 
 @interface MQTag2ViewController ()
 
@@ -16,12 +17,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"学习cell中button点击事件";
     self.view.backgroundColor = MQRandomColor;
     [self setTableView];
 }
 
 - (void)setTableView{
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+    
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([MQTag2TableViewCell class]) bundle:nil] forCellReuseIdentifier:@"cell"];
+//    self.tableView.estimatedRowHeight = 100;
+//    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView.rowHeight = 100;
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
 }
 
 #pragma mark - Table view data source
@@ -36,8 +43,8 @@
     return 100;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    cell.textLabel.text = @"buh ";
+    MQTag2TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    
     return cell;
 }
 @end

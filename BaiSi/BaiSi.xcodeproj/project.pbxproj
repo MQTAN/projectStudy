@@ -58,6 +58,8 @@
 		18BCD4981BFD7030005D1AB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BCD4961BFD7030005D1AB4 /* LaunchScreen.storyboard */; };
 		18BCD4A31BFD7030005D1AB4 /* BaiSiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BCD4A21BFD7030005D1AB4 /* BaiSiTests.m */; };
 		18BCD4AE1BFD7031005D1AB4 /* BaiSiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BCD4AD1BFD7031005D1AB4 /* BaiSiUITests.m */; };
+		18FF5D2A1C05B89D004F2E42 /* MQTag2TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FF5D281C05B89D004F2E42 /* MQTag2TableViewCell.m */; };
+		18FF5D2B1C05B89D004F2E42 /* MQTag2TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FF5D291C05B89D004F2E42 /* MQTag2TableViewCell.xib */; };
 		47CAD7328DF58FE2F9AEF026 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6528FD53A6C3806C17BD08E4 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -174,6 +176,9 @@
 		18BCD4A91BFD7031005D1AB4 /* BaiSiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaiSiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18BCD4AD1BFD7031005D1AB4 /* BaiSiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaiSiUITests.m; sourceTree = "<group>"; };
 		18BCD4AF1BFD7031005D1AB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18FF5D271C05B89D004F2E42 /* MQTag2TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTag2TableViewCell.h; sourceTree = "<group>"; };
+		18FF5D281C05B89D004F2E42 /* MQTag2TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTag2TableViewCell.m; sourceTree = "<group>"; };
+		18FF5D291C05B89D004F2E42 /* MQTag2TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MQTag2TableViewCell.xib; sourceTree = "<group>"; };
 		4523C73A19CE4ABF4CFAF2F9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		5E64456CEDFFF009C33D860D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		6528FD53A6C3806C17BD08E4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -446,6 +451,9 @@
 			children = (
 				18B3C8AD1C02B93F002CD926 /* MQTitleButton.h */,
 				18B3C8AE1C02B93F002CD926 /* MQTitleButton.m */,
+				18FF5D271C05B89D004F2E42 /* MQTag2TableViewCell.h */,
+				18FF5D281C05B89D004F2E42 /* MQTag2TableViewCell.m */,
+				18FF5D291C05B89D004F2E42 /* MQTag2TableViewCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -658,6 +666,7 @@
 				187D72171BFF176700020C52 /* h1.jpg in Resources */,
 				18BCD4951BFD7030005D1AB4 /* Assets.xcassets in Resources */,
 				187D72161BFF176700020C52 /* 111.jpg in Resources */,
+				18FF5D2B1C05B89D004F2E42 /* MQTag2TableViewCell.xib in Resources */,
 				18BCD4901BFD7030005D1AB4 /* Main.storyboard in Resources */,
 				187D721A1BFF176700020C52 /* h4.jpg in Resources */,
 				187D72011BFF176700020C52 /* MQWebViewController.xib in Resources */,
@@ -756,6 +765,7 @@
 				187D721D1BFF176700020C52 /* MQTagViewController.m in Sources */,
 				18BCD4931BFD7030005D1AB4 /* BaiSi.xcdatamodeld in Sources */,
 				187D71FD1BFF176700020C52 /* MQTabBar.m in Sources */,
+				18FF5D2A1C05B89D004F2E42 /* MQTag2TableViewCell.m in Sources */,
 				187D720E1BFF176700020C52 /* UIView+MQFrame.m in Sources */,
 				187D72091BFF176700020C52 /* UIBarButtonItem+MQExtension.m in Sources */,
 				187D71FB1BFF176700020C52 /* MQNavigationController.m in Sources */,
