@@ -14,7 +14,8 @@
 @implementation MQTag2TableViewCell
 - (IBAction)buttonClick:(id)sender {
     
-    MQLogLine(@"点击了这个button");
+    MQLogLine(@"点击了这个button, 让控制器去跳转");
+    
 }
 
 - (void)awakeFromNib {
