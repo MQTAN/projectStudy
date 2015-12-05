@@ -8,6 +8,7 @@
 
 #import "MQDatePickerViewController.h"
 #import "MQDatePickerView.h"
+#import "MQDatePicker.h"
 
 @interface MQDatePickerViewController ()
 
@@ -17,8 +18,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setNormalPickerView];
+#pragma mark- 有时候不设置这个背景的时候会出现MQDatePicker一闪而过的情况
+    self.title = @"Pickerview学习";
+    self.view.backgroundColor = MQRandomColor;
+//    [self setNormalPickerView];
+    [self setSystemDatePicker];
     
+    
+}
+
+- (void)setSystemDatePicker{
+    MQDatePicker *datePic = [[MQDatePicker alloc] init];
+    datePic.frame = CGRectMake(0, 300, self.view.width, 500);
+    [self.view addSubview:datePic];
 }
 #pragma mark- 普通的pickview学习;
 - (void)setNormalPickerView{
