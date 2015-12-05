@@ -61,6 +61,8 @@
 		18FF5D2A1C05B89D004F2E42 /* MQTag2TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FF5D281C05B89D004F2E42 /* MQTag2TableViewCell.m */; };
 		18FF5D2B1C05B89D004F2E42 /* MQTag2TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FF5D291C05B89D004F2E42 /* MQTag2TableViewCell.xib */; };
 		47CAD7328DF58FE2F9AEF026 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6528FD53A6C3806C17BD08E4 /* libPods.a */; };
+		7FA2FE6B1C12E384004317C7 /* MQStudyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA2FE6A1C12E384004317C7 /* MQStudyTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		7FA2FE6E1C12E4BD004317C7 /* MQDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA2FE6D1C12E4BD004317C7 /* MQDatePickerViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -182,6 +184,10 @@
 		4523C73A19CE4ABF4CFAF2F9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		5E64456CEDFFF009C33D860D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		6528FD53A6C3806C17BD08E4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FA2FE691C12E384004317C7 /* MQStudyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQStudyTableViewController.h; sourceTree = "<group>"; };
+		7FA2FE6A1C12E384004317C7 /* MQStudyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQStudyTableViewController.m; sourceTree = "<group>"; };
+		7FA2FE6C1C12E4BD004317C7 /* MQDatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQDatePickerViewController.h; sourceTree = "<group>"; };
+		7FA2FE6D1C12E4BD004317C7 /* MQDatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQDatePickerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +219,7 @@
 		187D719B1BFF176700020C52 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				7FA2FE621C12E2EB004317C7 /* 分散式学习 */,
 				187D719C1BFF176700020C52 /* Main */,
 				187D71A51BFF176700020C52 /* Me_我 */,
 				187D71B81BFF176700020C52 /* Other */,
@@ -549,6 +556,49 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7FA2FE621C12E2EB004317C7 /* 分散式学习 */ = {
+			isa = PBXGroup;
+			children = (
+				7FA2FE681C12E368004317C7 /* BaseVC */,
+				7FA2FE641C12E310004317C7 /* PickerView学习 */,
+			);
+			name = "分散式学习";
+			sourceTree = "<group>";
+		};
+		7FA2FE641C12E310004317C7 /* PickerView学习 */ = {
+			isa = PBXGroup;
+			children = (
+				7FA2FE671C12E325004317C7 /* Controller */,
+				7FA2FE651C12E31A004317C7 /* View */,
+			);
+			name = "PickerView学习";
+			sourceTree = "<group>";
+		};
+		7FA2FE651C12E31A004317C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		7FA2FE671C12E325004317C7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7FA2FE6C1C12E4BD004317C7 /* MQDatePickerViewController.h */,
+				7FA2FE6D1C12E4BD004317C7 /* MQDatePickerViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		7FA2FE681C12E368004317C7 /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				7FA2FE691C12E384004317C7 /* MQStudyTableViewController.h */,
+				7FA2FE6A1C12E384004317C7 /* MQStudyTableViewController.m */,
+			);
+			name = BaseVC;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -748,6 +798,7 @@
 				187D72031BFF176700020C52 /* MQFooterView.m in Sources */,
 				187D72211BFF176700020C52 /* TAPageControl.m in Sources */,
 				187D72111BFF176700020C52 /* NSObject+MQExtensionTool.m in Sources */,
+				7FA2FE6E1C12E4BD004317C7 /* MQDatePickerViewController.m in Sources */,
 				187D720B1BFF176700020C52 /* UIImageView+MQExtension.m in Sources */,
 				187D72221BFF176700020C52 /* SDCollectionViewCell.m in Sources */,
 				187D72131BFF176700020C52 /* ViewController.m in Sources */,
@@ -755,6 +806,7 @@
 				187D721E1BFF176700020C52 /* TAAbstractDotView.m in Sources */,
 				187D72051BFF176700020C52 /* MQMeTableViewCell.m in Sources */,
 				187D722C1BFF233B00020C52 /* MQview.m in Sources */,
+				7FA2FE6B1C12E384004317C7 /* MQStudyTableViewController.m in Sources */,
 				187D72241BFF176700020C52 /* UIView+SDExtension.m in Sources */,
 				187D720C1BFF176700020C52 /* UITableViewCell+MQExtension.m in Sources */,
 				187D721C1BFF176700020C52 /* MQTag2ViewController.m in Sources */,

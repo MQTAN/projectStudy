@@ -11,6 +11,7 @@
 #import "MQTabBar.h"
 #import "MQEssenceViewController.h"
 #import "MQMeViewController.h"
+#import "MQStudyTableViewController.h"
 
 @interface MQTabBarViewController ()
 
@@ -27,13 +28,16 @@
 
 - (void)setChildViewController{
     //添加子控制器
+    
+    
+    [self setOneViewController:[[MQStudyTableViewController alloc] initWithStyle:UITableViewStylePlain] normalImage:nil selectedImage:nil title:@"关注"];
     [self setOneViewController:[[MQEssenceViewController alloc]init] normalImage:[UIImage imageNamed:@"tabBar_essence_icon"] selectedImage:[UIImage imageNamed:@"tabBar_essence_click_icon"] title:@"精华"];
     [self setOneViewController:[[MQMeViewController alloc] initWithStyle:UITableViewStyleGrouped] normalImage:nil selectedImage:nil title:@"我"];
     
 
     [self setOneViewController:[[UIViewController alloc] init] normalImage:nil selectedImage:nil title:@"评论"];
     
-    [self setOneViewController:[[UIViewController alloc] init] normalImage:nil selectedImage:nil title:@"关注"];
+    
     
 }
 - (void)setOneViewController:(UIViewController *)childVC normalImage:(UIImage *)norImage selectedImage:(UIImage *)selImage title:(NSString *)title{
