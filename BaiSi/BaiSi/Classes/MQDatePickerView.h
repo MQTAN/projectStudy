@@ -11,5 +11,5 @@
 @interface MQDatePickerView : UIView
 
 
-- (instancetype)initWithFrame:(CGRect)frame columnNum:(NSUInteger)cloumnNum DataArrayWithOrderForColumn:(NSArray *)dataArray;
+//- (instancetype)initWithFrame:(CGRect)frame columnNum:(NSUInteger)cloumnNum DataArrayWithOrderForColumn:(NSArray *)dataArray;
 @end

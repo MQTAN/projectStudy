@@ -8,6 +8,7 @@
 
 #import "MQStudyTableViewController.h"
 #import "MQDatePickerViewController.h"
+#import "MQStudyViewCell.h"
 
 @interface MQStudyTableViewController ()
 
@@ -18,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"MQStudyCellID"];
+    [self.tableView registerClass:[MQStudyViewCell class] forCellReuseIdentifier:@"MQStudyCellID"];
 }
 
 #pragma mark - Table view data source
@@ -35,12 +36,11 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MQStudyCellID"];
+    MQStudyViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MQStudyCellID"];
+    
     cell.textLabel.text = [NSString stringWithFormat:@"第 %zd 占位用!", indexPath.row];
-    cell.textLabel.textColor = MQRandomColor;
     if (indexPath.row == 0) {
         cell.textLabel.text = @"学习PickerView关于日期的处理";
-        
     }
     
     return cell;
@@ -54,7 +54,7 @@
     }
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 44;
+    return 64;
 }
 /*
 // Override to support editing the table view.
