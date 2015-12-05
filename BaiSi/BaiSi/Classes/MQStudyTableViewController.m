@@ -36,11 +36,13 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MQStudyCellID"];
+    cell.textLabel.text = [NSString stringWithFormat:@"第 %zd 占位用!", indexPath.row];
+    cell.textLabel.textColor = MQRandomColor;
     if (indexPath.row == 0) {
         cell.textLabel.text = @"学习PickerView关于日期的处理";
+        
     }
     
-    cell.textLabel.text = [NSString stringWithFormat:@"第 %zd 占位用!", indexPath.row];
     return cell;
 }
 
@@ -51,7 +53,9 @@
         [self.navigationController pushViewController:pickerViewVC animated:YES];
     }
 }
-
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 44;
+}
 /*
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
